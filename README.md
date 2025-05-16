@@ -1,71 +1,51 @@
-# ai-testcase-generator README
+# 🧪 AI Unit Test Generator - VS Code Extension
 
-This is the README for your extension "ai-testcase-generator". After writing up a brief description, we recommend including the following sections.
+Generate unit test cases instantly for your selected methods or classes using OpenAI's API — all without leaving your editor.
 
-## Features
+## ✨ Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Select any method or class in your code
+- Choose a unit testing framework:
+  - `JUnit`, `PyTest`, `Mocha`, `Jest`, `NUnit`
+- Instantly generate test cases using OpenAI (GPT-4)
+- Opens the generated tests in a new editor tab
 
-For example if there is an image subfolder under your extension project workspace:
+## 🚀 How to Use
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Select the code (method/class) in the editor you want to generate tests for.  
+2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).  
+3. Run the command: **`Generate Unit Tests`**.  
+4. Choose your preferred test framework.  
+5. The generated test code will appear in a new editor tab.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## ⚙️ Setup
 
-## Requirements
+1. Clone the Repo  
+    ```bash
+    git clone https://github.com/Musquan/unit-test-gen-ai.git
+    cd unit-test-gen-ai
+    ```
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+2. Install Dependencies  
+    ```bash
+    npm install
+    ```
 
-## Extension Settings
+3. Configure Environment Variables  
+    Create a `.env` file in the root of the project:  
+    ```bash
+    touch .env
+    ```
+    Add your OpenAI API key to the `.env` file:  
+    ```
+    API_KEY=your_openai_api_key_here
+    ```
+    ✅ Make sure `.env` is listed in your `.gitignore` to keep it private.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+4. Launch the Extension  
+    - Open the project in **VS Code**  
+    - Press `F5` to open a new **Extension Development Host** window  
+    - Select the method or class you want to generate unit test cases for.  
+    - Use the Command Palette (`Ctrl+Shift+P`) and run: **Generate Unit Tests**  
+      OR  
+    - Right click and select **Generate Unit Tests**.
