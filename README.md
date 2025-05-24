@@ -40,8 +40,6 @@ Generate unit test cases instantly for your selected methods or classes using Op
     ```
     API_KEY=your_openai_api_key_here
     ```
-    ✅ Make sure `.env` is listed in your `.gitignore` to keep it private.
-
 4. Launch the Extension  
     - Open the project in **VS Code**  
     - Press `F5` to open a new **Extension Development Host** window  
