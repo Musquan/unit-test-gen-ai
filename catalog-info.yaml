@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: unit-test-gen-ai
+  description: A tool for generating unit tests using AI, designed to enhance software testing efficiency and accuracy.
+  annotations:
+    github.com/project-slug: Musquan/unit-test-gen-ai
+    jira/project-key: SCRUM
+    jira/label: backstage-component:unit-test-gen-ai
+spec:
+  type: library
+  owner: ICS
+  lifecycle: experimental
